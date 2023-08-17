@@ -25,7 +25,6 @@ const handleSubmit = async () => {
     console.log("error", error);
     if (error.error) {
       alertDialogBackend(error.error);
-      rr;
     } else if (error.errors[0].msg) {
       alertDialogBackend(error.errors[0].msg);
     } else {
