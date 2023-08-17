@@ -65,10 +65,10 @@ module.exports = configure(function (ctx) {
       env: {
         FRONT_URI: ctx.dev
           ? "http://localhost:9000"
-          : "https://mes-de-vue.netlify.app",
+          : "https://login-quasar-link.netlify.app",
         MY_API_REST: ctx.dev
           ? "http://localhost:5000/api/v1"
-          : "https://vialhue-production-f839.up.railway.app/api/v1",
+          : "https://zarbackend.onrender.com/api/v1",
       },
       // rawDefine: {}
       // ignorePublicFolder: true,

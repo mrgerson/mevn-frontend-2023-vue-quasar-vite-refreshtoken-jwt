@@ -7,8 +7,12 @@ const $q = useQuasar();
 
 const userStore = useUserStore();
 const router = useRouter();
-const email = ref("test@test.com");
-const password = ref("123123");
+
+/* const email = ref("gedacaba@gmail.com");
+const password = ref("1231234"); */
+
+const email = ref("");
+const password = ref("");
 
 const handleSubmit = async () => {
   try {
@@ -21,6 +25,7 @@ const handleSubmit = async () => {
     console.log("error", error);
     if (error.error) {
       alertDialogBackend(error.error);
+      rr;
     } else if (error.errors[0].msg) {
       alertDialogBackend(error.errors[0].msg);
     } else {
